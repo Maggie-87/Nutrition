@@ -2,16 +2,12 @@
 repo_name: Nutrition
 repo_url: https://github.com/Maggie-87/Nutrition
 edit_uri: ""
-deploy:
-  - provider: gh-pages
-    repo: <Maggie-87>/<Nutrition>
-    branch: main  # 默认分支
-
 
 site_name: Documentation
 site_description: 
 site_author: 
 site_url: https://maggie-87.github.io/Nutrition/
+site_dir: site
 
 theme: 
   name: material
@@ -39,12 +35,6 @@ plugins:
   - search
   - include-markdown
 
-# Customization
-extra:
-  # analytics:
-  #   provider: google
-  #   property: G-PEZ9H4DS1X
-
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -58,3 +48,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Food: food.md
+  - Body: body.md
