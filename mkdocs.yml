@@ -1,0 +1,60 @@
+# Repository
+repo_name: Nutrition
+repo_url: https://github.com/Maggie-87/Nutrition
+edit_uri: ""
+deploy:
+  - provider: gh-pages
+    repo: <Maggie-87>/<Nutrition>
+    branch: main  # 默认分支
+
+
+site_name: Documentation
+site_description: 
+site_author: 
+site_url: https://maggie-87.github.io/Nutrition/
+
+theme: 
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.top
+  # palette:
+  #   - scheme: default
+  #     primary: white
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/toggle-switch-off-outline
+  #       name: Switch to dark mode
+  #   - scheme: slate
+  #     primary: cyan
+  #     accent: cyan
+  #     toggle:
+  #       icon: material/toggle-switch
+  #       name: Switch to light mode
+  favicon: image/favicon.ico
+
+# Plugins
+plugins:
+  - search
+  - include-markdown
+
+# Customization
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-PEZ9H4DS1X
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - toc:
+      permalink: true
+  - admonition
+
+nav:
+  - Home: index.md
